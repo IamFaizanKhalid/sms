@@ -1,8 +1,8 @@
 <?php
 
-$school_name = "School of Information Technology";
-$school_logo = "/images/PUCIT Logo.png";
-$favicon = "/images/PUCIT Logo.png";
+$school_name = "Hogwarts School of Witchcraft and Wizardry";
+$school_logo = "/images/logo.webp";
+$favicon = "/images/logo.webp";
 
 $db_host = "sms-db";
 $db_user = "root";
