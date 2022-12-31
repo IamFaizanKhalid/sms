@@ -12,7 +12,7 @@ $pic = '/images/teacher/default.jpg';
 if ( !isset( $_POST[ "uname" ] ) )
 {
 	$uname = $conn->query("SELECT MAX(t_id)+1 AS id FROM teacher")->fetch_assoc();
-	$uname = 'teacher_'.str_pad($uname["id"], 3, '0', STR_PAD_LEFT);
+	$uname = 'teacher_'.str_pad($uname["id"]?: '1', 3, '0', STR_PAD_LEFT);
 }
 
 if ( isset( $_POST[ "save" ] ) ) {

@@ -14,7 +14,7 @@ $cls_id = '';
 if ( !isset( $_POST[ "uname" ] ) )
 {
 	$uname = $conn->query("SELECT MAX(std_id) AS id FROM student")->fetch_assoc();
-	$uname = 'student_'.str_pad($uname["id"], 3, '0', STR_PAD_LEFT);
+	$uname = 'student_'.str_pad($uname["id"]?:'1', 3, '0', STR_PAD_LEFT);
 }
 
 if ( isset( $_POST[ "save" ] ) ) {
