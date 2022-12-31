@@ -1,10 +1,10 @@
 version: "3.3"
 
 services:
-  sms-db:
+  db:
     container_name: sms-db
-    restart: always
     image: mysql:5.7
+    restart: always
     environment:
         MYSQL_ROOT_PASSWORD:
         MYSQL_ALLOW_EMPTY_PASSWORD: "true"
@@ -12,3 +12,15 @@ services:
       - ./_dbschema:/docker-entrypoint-initdb.d
     ports:
       - "3306:3306"
+
+  app:
+    container_name: sms-app
+    image: php:apache
+    build: .
+    restart: always
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - db

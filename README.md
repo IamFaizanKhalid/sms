@@ -1,14 +1,13 @@
 # School Management System
 
 ## Pre-requisites
-- `php`
-- `mysql` or `docker-compose`
+- `docker-compose`
 
 ## Getting started
 
-- Run `docker-compose up -d` to setup database.
 - Edit _includes/globalVars.php_ to set different options like school name and database config.
-- Run the project
+- Run `docker-compose up -d --build` to set up database and Apache HTTP Server.
+- Visit http://localhost:8080
 - Login with `admin` as the username and the password.
 - All set. Enjoy!
 
@@ -17,5 +16,5 @@
 
 - These can be added independently:
 	`Teachers`, `Admins`, `Subjects`, `Exams`
-- Classes must have an incharge (teacher). 
-- Student must be in a classes.
+- Class depends on an in-charge (teacher). 
+- Student depends on a class.
