@@ -1,0 +1,21 @@
+Instructions
+---------------
+
+1. All web files are in "sms-web" folder.
+2. In web files, edit '/includes/globalVars.php' to set different options like
+    school name and database settings.
+3. Upload web files to server.
+4. Run database .sql script (in MySQL).
+5. Login as
+	Username: admin
+	Password: admin
+6. All set. Enjoy!
+
+
+In Beginning
+-----------------
+
+1. These can be added independently:
+	Teachers, Admins, Subjects, Exams
+2. Classes must have an incharge (teacher).
+3. Student must be in a classes.
