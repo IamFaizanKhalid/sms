@@ -1,8 +1,8 @@
 # School Management System
 
 ## Pre-requisites
-- php
-- docker-compose
+- `php`
+- `mysql` or `docker-compose`
 
 ## Getting started
 
