@@ -4,7 +4,7 @@ $school_name = "School of Information Technology";
 $school_logo = "/images/PUCIT Logo.png";
 $favicon = "/images/PUCIT Logo.png";
 
-$db_host = "localhost";
+$db_host = "127.0.0.1";
 $db_user = "root";
 $db_pass = "";
 $db = "sms";
